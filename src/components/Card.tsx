@@ -15,7 +15,7 @@ export default function Card({venueName, imgSrc, onRating} : {venueName:string, 
         </div>
         <div className='p-[10px] h-[30%]'>
             <div className='text-blue-700 font-semibold text-lg'>{venueName}</div>
-            <Rating id={venueName + ' Rating'} name={venueName + ' Rating'} data-testid={venueName + ' Rating'} onChange={(event, value)=>{setRating(value); onRating(venueName, value ?? 0) }} value={rating}/>
+            <Rating id={venueName + ' Rating'} name={venueName + ' Rating'} data-testid={venueName + ' Rating'} onClick={(e)=>{e.stopPropagation();}} onChange={(e, value)=>{ setRating(value); onRating(venueName, value ?? 0) }} value={rating}/>
         </div>
         </InteractiveCard>
 
