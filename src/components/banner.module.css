@@ -1,0 +1,18 @@
+.banner {
+    display: block;
+    height: 80vh;
+    width: 100vw;
+    padding: 5px;
+    margin: 0;
+    position: relative;
+}
+
+.bannertext {
+    position: relative;
+    z-index: 20;
+    text-align: center;
+    top: 245px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
